@@ -1,0 +1,65 @@
+@import '../../theme/variables';
+
+#scheduleMain {
+  border: {
+    width: 1px;
+    style: solid;
+    color: $schedule-border;
+  }
+
+  display: flex;
+
+  #leftColumn {
+    background: green;
+    border-right: 1px solid green;
+    min-width: 100px;
+
+    #spacerMain {
+      background: #dedede;
+      min-height: $schedule-header-min-height;
+      width: 100%;
+    }
+
+    #personMain {
+      background: #333111;
+    }
+  }
+
+  #rightColumn {
+    background: yellow;
+    width: 100%;
+
+    #dateMain {
+      min-height: $schedule-header-min-height;
+      background-color: rgb(238, 238, 238);
+      border-left: 1px solid rgb(192, 192, 192);
+      white-space: nowrap;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      display: flex;
+    }
+
+    #bookingMain {
+      background-color: rgb(84, 197, 238);
+      border-left: 1px solid rgb(192, 192, 192);
+      white-space: nowrap;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      display: flex;
+    }
+  }
+
+  ul {
+    padding-left: 17px;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../theme/variables';
+
+body {
+  background-color: $color-dark-gray;
+  font-family: 'Helvetica-Light', Helvetica, Arial, sans-serif;
+}
+
+.Layout {
+  height: 100%;
+
+  .logo {
+    float: left;
+    height: 98%;
+    line-height: 63px;
+    font-size: 21px;
+    color: $primary-color;
+    margin-right: 24px;
+    margin-left: -22px;
+  }
+}
+
+.App {
+  color: $color-white;
+
+  .header {
+    overflow: auto;
+    padding: 15px;
+
+    img {
+      float: left;
+      height: 70px;
+      margin-right: 1em;
+    }
+  }
+
+  hr {
+    margin-bottom: 0;
+    margin-top: 0;
+    opacity: 0.15;
+  }
+}
